@@ -191,3 +191,39 @@ body {
         font-size: 1.5rem;
     }
 }
+/* Modifica los estilos para el header desplegado permanentemente */
+.header-deployed {
+    padding-top: 3rem !important;
+}
+
+.header-deployed::after {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    /* Ajustamos la altura para que llegue exactamente al borde del menú */
+    height: 100%; /* Ahora llega exactamente al borde del menú */
+    background-color: white;
+    z-index: -1;
+    box-shadow: none; /* Eliminamos la sombra */
+}
+
+.header-deployed .header-title {
+    opacity: 1 !important;
+    top: 10px !important;
+}
+
+.header-deployed .nav-links a {
+    color: var(--text-color) !important;
+}
+
+/* Para las páginas que no son index, eliminamos efectos de hover y sombras */
+.header-deployed:hover {
+    box-shadow: none !important;
+}
+
+/* Ajusta el padding-top del main para las páginas que no son index */
+body:not(.home-page) main {
+    padding-top: 100px; /* Ajusta este valor según la altura de tu header */
+}
