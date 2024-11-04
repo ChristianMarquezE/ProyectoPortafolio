@@ -1,139 +1,188 @@
-body {
-    font-family: 'Arial', sans-serif;
+/* Resetear estilos y variables */
+:root {
+    --text-color: #000000;
+}
+
+* {
     margin: 0;
     padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Arial', sans-serif;
     line-height: 1.6;
-    background-color: #f9f9f9; /* Color de fondo suave */
-    color: #333; /* Color de texto */
+    color: var(--text-color);
+    overflow-x: hidden;
 }
 
-header {
-    background: linear-gradient(135deg, #ff7e5f, #feb47b); /* Degradado atractivo */
-    color: #fff;
-    padding: 20px 0;
-    text-align: center;
-    box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1); /* Sombra sutil */
+/* Header y Navegación */
+.header-main {
+    position: fixed;
+    width: 100%;
+    top: 0;
+    left: 0;
+    z-index: 3;
+    padding: 1rem;
+    transition: background-color 0.3s ease;
 }
 
-nav ul {
-    list-style: none;
-    padding: 0;
+.header-main:hover {
+    background-color: white;
 }
 
-nav ul li {
-    display: inline;
-    margin: 0 15px;
-}
-
-nav ul li a {
-    color: #fff;
-    text-decoration: none;
+.header-title {
+    position: absolute;
+    top: -30px; /* Ajusta este valor según necesites */
+    left: 50%;
+    transform: translateX(-50%);
+    font-size: 1.5rem;
     font-weight: bold;
-    transition: color 0.3s;
+    opacity: 0;
+    transition: opacity 0.3s ease, top 0.3s ease;
 }
 
-nav ul li a:hover {
-    color: #ffeb3b; /* Color de hover */
+.header-main:hover .header-title {
+    opacity: 1;
+    top: 5px; /* Ajusta este valor según necesites */
 }
 
-section {
-    padding: 40px 20px;
-    text-align: center;
-}
-
-h1, h2 {
-    font-family: 'Georgia', serif; /* Tipografía elegante */
-    margin-bottom: 20px;
-}
-
-h2 {
-    color: #ff7e5f; /* Color de encabezado */
-}
-
-.gallery {
+.nav-container {
     display: flex;
-    flex-wrap: wrap;
-    justify-content: center;
-    gap: 20px; /* Espacio entre los elementos */
-    margin-top: 20px;
+    justify-content: flex-start;
+    align-items: center;
 }
 
-.gallery-item {
+.nav-links {
+    display: flex;
+    flex-direction: row;
+    gap: 2rem;
+    list-style: none;
+    margin-left: 1rem;
+}
+
+.nav-links a {
+    color: var(--text-color);
+    text-decoration: none;
+    font-weight: 500;
+    transition: opacity 0.3s ease;
+}
+
+.nav-links a:hover {
+    opacity: 0.7;
+}
+
+/* Estilos para el menú desplegable */
+.dropdown {
+    position: relative;
+    display: inline-block;
+}
+
+.dropdown-content {
+    display: none;
+    position: absolute;
+    top: 100%;
+    left: 0;
+    background-color: white;
+    min-width: 160px;
+    box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+    z-index: 4;
+    border-radius: 4px;
+}
+
+.dropdown:hover .dropdown-content {
+    display: block;
+}
+
+.dropdown-content li {
+    list-style: none;
+}
+
+.dropdown-content a {
+    color: var(--text-color);
+    padding: 12px 16px;
+    text-decoration: none;
+    display: block;
+    transition: background-color 0.3s ease;
+}
+
+.dropdown-content a:hover {
+    background-color: #f1f1f1;
+}
+
+/* Estilo especial para "Ver Todo" */
+.ver-todo {
+    border-top: 1px solid #eee;
+}
+/* Estilo especial para "Ver Todo" */
+.ver-todo {
+    border-top: 1px solid #eee;
+}
+
+
+/* Sección Hero */
+.hero {
+    height: 100vh;
+    width: 100%;
+    position: relative;
     display: flex;
     justify-content: center;
     align-items: center;
     overflow: hidden;
-    width: 250px;
-    height: 250px;
-    border-radius: 10px; /* Bordes redondeados */
-    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.1); /* Sombra de caja */
-    transition: transform 0.3s, box-shadow 0.3s; /* Transiciones suaves */
 }
 
-.gallery-item:hover {
-    transform: scale(1.05); /* Efecto de zoom */
-    box-shadow: 0 8px 25px rgba(0, 0, 0, 0.2); /* Sombra más intensa al pasar el mouse */
-}
-
-.gallery-item img {
-    max-width: 100%;
-    max-height: 100%;
-    border-radius: 10px; /* Bordes redondeados para la imagen */
-}
-
-form {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    max-width: 400px;
-    margin: 20px auto;
-    background: #fff; /* Fondo blanco para el formulario */
-    padding: 20px;
-    border-radius: 10px; /* Bordes redondeados */
-    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.1); /* Sombra de caja */
-}
-
-form label {
-    margin: 10px 0 5px;
-    font-weight: bold; /* Negrita para las etiquetas */
-}
-
-form input, form textarea {
+#bg-video {
+    position: absolute;
+    top: 0;
+    left: 0;
     width: 100%;
-    padding: 10px;
-    margin-bottom: 15px;
-    border: 1px solid #ccc;
-    border-radius: 5px;
-    transition: border-color 0.3s; /* Transición suave para el borde */
+    height: 100%;
+    object-fit: cover;
+    z-index: 1;
 }
 
-form input:focus, form textarea:focus {
-    border-color: #ff7e5f; /* Color de borde al enfocar */
-    outline: none; /* Sin contorno */
-}
-
-form button {
-    padding: 10px 15px;
-    background: #ff7e5f; /* Color de fondo del botón */
-    color: #fff;
-    border: none;
-    border-radius: 5px;
-    cursor: pointer;
-    font-weight: bold; /* Negrita para el botón */
-    transition: background 0.3s, transform 0.3s; /* Transiciones suaves */
-}
-
-form button:hover {
-    background: #feb47b; /* Color de fondo al pasar el mouse */
-    transform: translateY(-2px); /* Efecto de elevación */
-}
-
-footer {
-    background: #333;
-    color: #fff;
+.hero-content {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
     text-align: center;
-    padding: 20px 0;
-    position: relative;
-    bottom: 0;
+    z-index: 2;
     width: 100%;
+}
+
+.hero h1 {
+    font-size: 4rem;
+    color: white;
+    text-shadow: 2px 2px 4px rgba(0,0,0,0.5);
+}
+
+/* Animación del menú desplegable */
+.dropdown-content {
+    transform-origin: top;
+    animation: dropdownAnimation 0.3s ease;
+}
+
+@keyframes dropdownAnimation {
+    from {
+        opacity: 0;
+        transform: scaleY(0);
+    }
+    to {
+        opacity: 1;
+        transform: scaleY(1);
+    }
+}
+
+/* Media Queries */
+@media (max-width: 768px) {
+    .nav-links {
+        flex-direction: column;
+        align-items: center;
+        gap: 0.5rem;
+    }
+
+    .header-title {
+        font-size: 1.5rem;
+    }
 }
