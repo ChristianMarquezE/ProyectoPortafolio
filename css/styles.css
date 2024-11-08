@@ -23,9 +23,12 @@ body {
     top: 0;
     left: 0;
     z-index: 3;
-    padding: 1.5rem 1rem;
-    transition: all 0.3s ease; /* Cambiamos a 'all' para incluir el background-color */
-    background-color: transparent; /* Inicialmente transparente */
+    padding: 1rem 0rem;
+    transition: all 0.3s ease; 
+    background-color: transparent; 
+}
+.header-no-padding {
+    padding: 0; /* Padding para contacto.html */
 }
 
 .header-title {
@@ -41,18 +44,30 @@ body {
 
 .header-main:hover {
     padding-top: 3rem;
-    background-color: white; /* Fondo blanco al hacer hover */
-    box-shadow: 0 2px 10px rgba(0,0,0,0.1); /* Opcional: añade una sombra suave */
+    background-color: white; 
+    box-shadow: 0 2px 10px rgba(0,0,0,0.1); 
 }
 
 .header-main:hover .header-title {
     opacity: 1;
     top: 10px;
 }
-/* Ajustamos los enlaces para que sean negros cuando el fondo es blanco */
+
 .header-main:hover .nav-links a {
-    color: var(--text-color); /* Aseguramos que los enlaces sean visibles sobre fondo blanco */
+    color: var(--text-color); 
 }
+
+.header-main.header-hover {
+    padding-top: 3rem; /* Aplica el padding que se usa en hover */
+    background-color: white; /* Color de fondo */
+    box-shadow: 0 2px 10px rgba(0,0,0,0.1); /* Sombra */
+}
+
+.header-main.header-hover .header-title {
+    opacity: 1; /* Asegúrate de que el título sea visible */
+    top: 10px; /* Asegúrate de que esté en la posición correcta */
+}
+
 .nav-container {
     display: flex;
     justify-content: flex-start;
@@ -66,65 +81,44 @@ body {
     list-style: none;
     margin-left: 1rem;
 }
+
 .nav-links a {
     color: var(--text-color);
     text-decoration: none;
     font-weight: 500;
     transition: opacity 0.3s ease;
 }
-
+.nav-links a.active {
+    text-decoration: underline; /* Subrayado para el enlace activo */
+}
 .nav-links a:hover {
     opacity: 0.7;
 }
 
-/* Estilos para el menú desplegable */
-.dropdown {
-    position: relative;
-    display: inline-block;
+
+/* Colecciones */
+
+.colecciones-content {
+    display: none; /* Ocultar por defecto */
+    flex-direction: column; /* Asegura que los elementos se alineen en columna */
+    margin-top: 0.5rem; /* Espaciado superior para separar del enlace principal */
 }
 
-.dropdown-content {
-    display: none;
-    position: absolute;
-    top: 100%;
-    left: 0;
-    background-color: white;
-    min-width: 160px;
-    box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
-    z-index: 4;
-    border-radius: 4px;
+.colecciones:hover .colecciones-content {
+    display: block; /* Mostrar al pasar el mouse */
 }
 
-.dropdown:hover .dropdown-content {
-    display: block;
+/* Estilos para los enlaces dentro de colecciones */
+.colecciones-content a {
+    display: block; /* Cada enlace ocupa una línea completa */
+    padding: 0.1rem 0rem; /* Espaciado alrededor de cada enlace */
+    text-decoration: none; /* Sin subrayado */
+    color: var(--text-color); /* Color del texto */
 }
 
-.dropdown-content li {
-    list-style: none;
+.colecciones-content a:hover {
+    background-color: rgba(0, 0, 0, 0.1); /* Color de fondo al pasar el mouse */
 }
-
-.dropdown-content a {
-    color: var(--text-color);
-    padding: 12px 16px;
-    text-decoration: none;
-    display: block;
-    transition: background-color 0.3s ease;
-}
-
-.dropdown-content a:hover {
-    background-color: #f1f1f1;
-}
-
-/* Estilo especial para "Ver Todo" */
-.ver-todo {
-    border-top: 1px solid #eee;
-}
-/* Estilo especial para "Ver Todo" */
-.ver-todo {
-    border-top: 1px solid #eee;
-}
-
-
 /* Sección Hero */
 .hero {
     height: 100vh;
@@ -162,23 +156,6 @@ body {
     text-shadow: 2px 2px 4px rgba(0,0,0,0.5);
 }
 
-/* Animación del menú desplegable */
-.dropdown-content {
-    transform-origin: top;
-    animation: dropdownAnimation 0.3s ease;
-}
-
-@keyframes dropdownAnimation {
-    from {
-        opacity: 0;
-        transform: scaleY(0);
-    }
-    to {
-        opacity: 1;
-        transform: scaleY(1);
-    }
-}
-
 /* Media Queries */
 @media (max-width: 768px) {
     .nav-links {
@@ -191,3 +168,4 @@ body {
         font-size: 1.5rem;
     }
 }
+
