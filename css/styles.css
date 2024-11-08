@@ -23,7 +23,7 @@ body {
     top: 0;
     left: 0;
     z-index: 3;
-    padding: 1rem 0rem;
+    padding: 1.8rem 1rem;
     transition: all 0.3s ease; 
     background-color: transparent; 
 }
@@ -32,6 +32,9 @@ body {
 }
 
 .header-title {
+    display: flex;
+    justify-content: center; /* Centra horizontalmente */
+    align-items: center; /* Centra verticalmente, si es necesario */
     position: absolute;
     top: -30px;
     left: 50%;
@@ -40,6 +43,10 @@ body {
     font-weight: bold;
     opacity: 0;
     transition: opacity 0.3s ease, top 0.3s ease;
+}
+.header-title img {
+    max-width: 20%; /* Asegúrate de que la imagen no exceda el ancho del contenedor */
+    height: auto; /* Mantiene la proporción de la imagen */
 }
 
 .header-main:hover {
@@ -150,11 +157,11 @@ body {
     width: 100%;
 }
 
-.hero h1 {
-    font-size: 4rem;
-    color: white;
-    text-shadow: 2px 2px 4px rgba(0,0,0,0.5);
+.hero-content img {
+  width: 27%;
+  height: 27%;
 }
+
 
 /* Media Queries */
 @media (max-width: 768px) {
@@ -169,3 +176,10 @@ body {
     }
 }
 
+
+.montserrat-light {
+  font-family: "Montserrat", serif;
+  font-optical-sizing: auto;
+  font-weight: 200;
+  font-style: normal;
+}
