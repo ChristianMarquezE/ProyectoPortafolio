@@ -1,3 +1,31 @@
+.padding{
+  padding-top: 86px;
+}
+
+.padding-top{
+  padding-top: 15px;
+}
+.width-100{
+  width: 100vw;
+  height: 100vh
+}
+.paia-imagen{
+  width: 100vw;
+  height: 60vh;
+}
+
+.padding-bottom{
+  padding-bottom: 30vh;
+}
+.tamano-letra{
+  font-size: large;
+}
+.padding-general{
+  padding: 15vh;
+  justify-content: center;
+ text-align: center;
+
+}
 /* Resetear estilos y variables */
 :root {
   --text-color: #000000;

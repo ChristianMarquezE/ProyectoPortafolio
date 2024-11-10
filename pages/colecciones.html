@@ -49,6 +49,8 @@
       rel="stylesheet"
       href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css"
     />
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz" crossorigin="anonymous"></script>
   </head>
   <body>
     <header class="header-main header-hover header-no-padding">
@@ -65,17 +67,17 @@
           <li><a href="../index.html">Inicio</a></li>
           <li class="colecciones">
             <a
-              href="colecciones.html"
+              href="#"
               class="colecciones-link active"
               id="colecciones-button"
               >Colecciones</a
             >
             <div class="colecciones-content">
-              <a href="#coleccion1">Praia</a>
-              <a href="#coleccion2">Éclat Céleste</a>
-              <a href="#coleccion3">Resplandor del desierto</a>
-              <a href="#coleccion4">SastrO</a>
-              <a href="#ver-todo" class="ver-todo">Ver Todo</a>
+              <a href="praia.html">Praia</a>
+              <a href="eclat-celeste.html">Éclat Céleste</a>
+              <a href="resplandor-del-desierto.html">Resplandor del desierto</a>
+              <a href="sastro.html">SastrO</a>
+              <a href="#" class="ver-todo active">Ver Todo</a>
             </div>
           </li>
           <li><a href="sobre-mi.html">Sobre Mí</a></li>
@@ -93,7 +95,108 @@
       </div>
     </header>
 
-    <main></main>
+    <main>
+      <div id="carouselExampleAutoplaying" class="padding carousel slide" data-bs-ride="carousel">
+        <div class="carousel-inner">
+          <div class="carousel-item active">
+            <img src="../assets/1-copia.JPG" class="d-block w-100" alt="...">
+          </div>
+          <div class="carousel-item">
+            <img src="../assets/1-copia.JPG" class="d-block w-100" alt="...">
+          </div>
+          <div class="carousel-item">
+            <img src="../assets/1-copia.JPG" class="d-block w-100" alt="...">
+          </div>
+        </div>
+        <button class="carousel-control-prev padding" type="button" data-bs-target="#carouselExampleAutoplaying" data-bs-slide="prev">
+          <span class="carousel-control-prev-icon padding" aria-hidden="true"></span>
+          <span class="visually-hidden padding">Previous</span>
+        </button>
+        <button class="carousel-control-next padding" type="button" data-bs-target="#carouselExampleAutoplaying" data-bs-slide="next">
+          <span class="carousel-control-next-icon padding" aria-hidden="true"></span>
+          <span class="visually-hidden padding">Next</span>
+        </button>
+      </div>
+
+      <div id="carouselExampleAutoplaying2" class="padding-top carousel slide" data-bs-ride="carousel">
+        <div class="carousel-inner">
+          <div class="carousel-item active">
+            <img src="../assets/2-copia.JPG" class="d-block w-100" alt="...">
+          </div>
+          <div class="carousel-item">
+            <img src="../assets/2-copia.JPG" class="d-block w-100" alt="...">
+          </div>
+          <div class="carousel-item">
+            <img src="../assets/2-copia.JPG" class="d-block w-100" alt="...">
+          </div>
+        </div>
+        <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleAutoplaying2" data-bs-slide="prev">
+          <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+          <span class="visually-hidden">Previous</span>
+        </button>
+        <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleAutoplaying2" data-bs-slide="next">
+          <span class="carousel-control-next-icon" aria-hidden="true"></span>
+          <span class="visually-hidden">Next</span>
+        </button>
+      </div>
+
+      <div id="carouselExampleAutoplaying3" class="padding-top carousel slide" data-bs-ride="carousel">
+        <div class="carousel-inner">
+          <div class="carousel-item active">
+            <img src="../assets/3-copia.JPG" class="d-block w-100" alt="...">
+          </div>
+          <div class="carousel-item">
+            <img src="../assets/3-copia.JPG" class="d-block w-100" alt="...">
+          </div>
+          <div class="carousel-item">
+            <img src="../assets/3-copia.JPG" class="d-block w-100" alt="...">
+          </div>
+        </div>
+        <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleAutoplaying3" data-bs-slide="prev">
+          <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+          <span class="visually-hidden">Previous</span>
+        </button>
+        <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleAutoplaying3" data-bs-slide="next">
+          <span class="carousel-control-next-icon" aria-hidden="true"></span>
+          <span class="visually-hidden">Next</span>
+        </button>
+      </div>
+
+      <div id="carouselExampleAutoplaying4" class="padding-top carousel slide" data-bs-ride="carousel">
+        <div class="carousel-inner">
+          <div class="carousel-item active">
+            <img src="../assets/4-copia.JPG" class="d-block w-100" alt="...">
+          </div>
+          <div class="carousel-item">
+            <img src="../assets/4-copia.JPG" class="d-block w-100" alt="...">
+          </div>
+          <div class="carousel-item">
+            <img src="../assets/4-copia.JPG" class="d-block w-100" alt="...">
+          </div>
+        </div>
+        <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleAutoplaying4" data-bs-slide="prev">
+          <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+          <span class="visually-hidden">Previous</span>
+        </button>
+        <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleAutoplaying4" data-bs-slide="next">
+          <span class="carousel-control-next-icon" aria-hidden="true"></span>
+          <span class="visually-hidden">Next</span>
+        </button>
+      </div>
+    </main>
+
+    <footer class="montserrat-light">
+      <h2>Contáctame</h2>
+      <div class="social-icons">
+        <a href="https://www.instagram.com/jorregodesign/" target="_blank">
+          <i class="fab fa-instagram"></i>
+        </a>
+        <a href="mailto:jorregor@udd.cl" target="_blank">
+          <i class="fa-regular fa-envelope"></i>
+        </a>
+      </div>
+      <p>© 2024 JORREGO. Todos los derechos reservados.</p>
+    </footer>
 
     <script src="../js/script.js"></script>
   </body>
