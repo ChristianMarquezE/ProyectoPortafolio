@@ -45,10 +45,13 @@
       href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,300;1,300&display=swap"
       rel="stylesheet"
     />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css"
+    />
   </head>
   <body>
     <header class="header-main header-hover header-no-padding">
-      <!-- Agregar clase header-hover -->
       <div class="header-title">
         <img src="../assets/jorregoJO.png" alt="" />
       </div>
@@ -67,13 +70,81 @@
           </li>
           <li><a href="sobre-mi.html">Sobre Mí</a></li>
           <li><a href="manifiesto.html">Manifiesto</a></li>
-          <li><a href="#" class="active">Contacto</a></li>
+          <li><a href="contacto.html">Contacto</a></li>
         </ul>
       </nav>
+      <div class="social-icons">
+        <a href="https://www.instagram.com/jorregodesign/" target="_blank">
+          <i class="fab fa-instagram"></i>
+        </a>
+        <a href="mailto:jorregor@udd.cl" target="_blank">
+          <i class="fa-regular fa-envelope"></i>
+        </a>
+      </div>
     </header>
-    <main>
-      <!-- Aquí va el contenido específico de la página de contacto -->
+    <main class="montserrat-light">
+      <section class="contacto">
+        <div class="contacto-content">
+          <h2>Contacto</h2>
+          <div class="contacto-info">
+            <h3>Josefina Orrego</h3>
+
+            <h3>VISITANOS</h3>
+            <p>@jorregodesing</p>
+
+            <h3>LLAMANOS</h3>
+            <p>+(56) 988112955</p>
+
+            <h3>ESCRIBENOS</h3>
+            <p><strong>jorregor@udd.cl</strong></p>
+          </div>
+
+          <div class="mapa">
+            <h3>Encuéntrame aquí:</h3>
+            <iframe
+              src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d426004.283184385!2d-71.25377547575305!3d-33.4712249350505!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x9662c5410425af2f%3A0x8475d53c400f0931!2sSantiago%2C%20Regi%C3%B3n%20Metropolitana!5e0!3m2!1ses!2scl!4v1731234065686!5m2!1ses!2scl"
+              width="600"
+              height="450"
+              style="border: 0"
+              allowfullscreen=""
+              loading="lazy"
+              referrerpolicy="no-referrer-when-downgrade"
+            ></iframe>
+          </div>
+          <form action="#" method="post" class="contact-form">
+            <label for="name">Nombre</label>
+            <input type="text" id="name" name="name" required />
+
+            <label for="email">Email</label>
+            <input type="email" id="email" name="email" required />
+
+            <label for="message">Mensaje</label>
+            <textarea id="message" name="message" required></textarea>
+
+            <button type="submit"><p class="montserrat-light">ENVIA UN MENSAJE</p> →</button>
+          </form>
+        </div>
+      </section>
     </main>
+
+    <footer class="montserrat-light">
+      <h2>Contáctame</h2>
+      <div class="social-icons">
+        <a href="https://www.instagram.com/jorregodesign/" target="_blank">
+          <i class="fab fa-instagram"></i>
+        </a>
+        <a href="mailto:jorregor@udd.cl" target="_blank">
+          <i class="fa-regular fa-envelope"></i>
+        </a>
+        <a href="https://www.facebook.com" target="_blank">
+          <i class="fab fa-facebook-f"></i>
+        </a>
+        <a href="https://www.linkedin.com" target="_blank">
+          <i class="fab fa-linkedin-in"></i>
+        </a>
+      </div>
+      <p>© 2023 JORREGO. Todos los derechos reservados.</p>
+    </footer>
 
     <script src="script.js"></script>
   </body>
