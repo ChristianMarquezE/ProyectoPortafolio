@@ -48,34 +48,46 @@
   </head>
   <body>
     <header class="header-main header-hover header-no-padding">
-      <!-- Agregar clase header-hover -->
       <div class="header-title">
         <img src="../assets/jorregoJO.png" alt="" />
       </div>
+      <button class="menu-toggle" aria-label="Abrir menú">
+        <span class="bar"></span>
+        <span class="bar"></span>
+        <span class="bar"></span>
+      </button>
       <nav class="nav-container montserrat-light">
         <ul class="nav-links">
           <li><a href="../index.html">Inicio</a></li>
           <li class="colecciones">
-            <a href="colecciones.html" class="colecciones-link">Colecciones</a>
+            <a href="colecciones.html" class="colecciones-link" id="colecciones-button">Colecciones</a>
             <div class="colecciones-content">
-              <a href="#coleccion1">Praia</a>
-              <a href="#coleccion2">Éclat Céleste</a>
-              <a href="#coleccion3">Resplandor del desierto</a>
-              <a href="#coleccion4">SastrO</a>
-              <a href="#ver-todo" class="ver-todo">Ver Todo</a>
+                <a href="#coleccion1">Praia</a>
+                <a href="#coleccion2">Éclat Céleste</a>
+                <a href="#coleccion3">Resplandor del desierto</a>
+                <a href="#coleccion4">SastrO</a>
+                <a href="#ver-todo" class="ver-todo">Ver Todo</a>
             </div>
-          </li>
+        </li>
           <li><a href="sobre-mi.html">Sobre Mí</a></li>
-          <li><a href="#" class="active">Manifiesto</a></li>
-          <li><a href="contacto.html">Contacto</a></li>
+          <li><a href="manifiesto.html">Manifiesto</a></li>
+          <li><a class="active" href="contacto.html">Contacto</a></li>
         </ul>
       </nav>
+      <div class="social-icons">
+        <a href="https://www.instagram.com/jorregodesign/" target="_blank">
+          <i class="fab fa-instagram"></i>
+        </a>
+        <a href="mailto:jorregor@udd.cl" target="_blank">
+          <i class="fa-regular fa-envelope"></i>
+        </a>
+      </div>
     </header>
 
     <main>
       <!-- Aquí va el contenido específico de la página de manifiesto -->
     </main>
 
-    <script src="script.js"></script>
+    <script src="../js/script.js"></script>
   </body>
 </html>
