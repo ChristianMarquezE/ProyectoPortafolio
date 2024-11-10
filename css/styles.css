@@ -10,7 +10,7 @@
 }
 
 body {
-  font-family: 'Arial', sans-serif;
+font-family: 'Montserrat', serif;
   line-height: 1.6;
   color: var(--text-color);
   overflow-x: hidden;
@@ -32,7 +32,7 @@ body {
 }
 
 /* Estilo para los íconos del header */
-.header-main .social-icons a {
+.header-main .social-icons2 a {
   color: var(
     --text-color
   ); /* Color negro (puedes definirlo en :root como #000000) */
@@ -40,7 +40,7 @@ body {
   font-size: 1.5rem; /* Tamaño del ícono */
 }
 
-.header-main .social-icons a:hover {
+.header-main .social-icons2 a:hover {
   opacity: 0.7; /* Efecto al pasar el mouse */
 }
 .header-no-padding {
@@ -183,6 +183,7 @@ body {
     flex-direction: column;
     align-items: center;
     gap: 0.5rem;
+    padding-bottom: 10px;
   }
 
   .header-title {
@@ -203,7 +204,7 @@ body {
 
   .mapa iframe {
     width: 100%;
-    height: 30%;
+    height: 42%;
   }
 }
 .menu-toggle {
@@ -214,6 +215,7 @@ body {
   background: none; /* Sin fondo */
   padding: 0; /* Sin padding */
   margin-left: 20px; /* Mover el botón un poco más a la derecha */
+  margin-bottom: 10px
 }
 
 .menu-toggle .bar {
@@ -253,6 +255,8 @@ body {
   .nav-container.show {
     display: flex; /* Mostrar el menú cuando se activa */
   }
+  
+  
 }
 /* FOOTER */
 
@@ -291,10 +295,19 @@ footer h2 {
   font-size: 1.5rem; /* Tamaño del ícono */
   text-decoration: none; /* Sin subrayado */
 }
-
+.social-icons2 a {
+    color: var(--text-color); /* Color del ícono */
+    margin: 0px 10px; /* Espaciado entre íconos */
+    font-size: 1.5rem; /* Tamaño del ícono */
+    text-decoration: none; /* Sin subrayado */
+  }
 .social-icons a:hover {
   opacity: 0.7; /* Efecto al pasar el mouse */
 }
+.social-icons2 a:hover {
+    opacity: 0.7; /* Efecto al pasar el mouse */
+  }
+
 
 footer p {
   margin: 10px 0 0; /* Margen para el texto del pie de página */
@@ -425,3 +438,12 @@ footer p {
   flex: 1; /* Permitir que el mapa ocupe el espacio disponible */
   text-align: center; /* Centrar el texto del mapa */
 }
+
+.social-icons2 {
+    display: none; /* Ocultar por defecto */
+  }
+  
+  .social-icons2.show {
+    display: flex; /* Mostrar cuando se activa */
+  }
+  

@@ -10,13 +10,30 @@ const observador = new IntersectionObserver((entries) => {
 // Observar todos los elementos con la clase fade-in
 document.querySelectorAll('.fade-in').forEach((el) => observador.observe(el));
 
-const menuToggle = document.querySelector('.menu-toggle'); // Solo se declara una vez
-const navContainer = document.querySelector('.nav-container'); // Solo se declara una vez
+const menuToggle = document.querySelector('.menu-toggle'); 
+const navContainer = document.querySelector('.nav-container'); 
 const coleccionesButton = document.getElementById('colecciones-button');
 const coleccionesContent = document.querySelector('.colecciones-content');
+const socialIcons = document.querySelector('.social-icons2'); 
+const headerTitle = document.querySelector('.header-title'); // Agrega esta línea
+
 
 menuToggle.addEventListener('click', () => {
     navContainer.classList.toggle('show'); // Alternar la clase 'show' para mostrar/ocultar el menú
+    socialIcons.classList.toggle('show'); // Alternar la visibilidad de los íconos de redes sociales
+    if (navContainer.classList.contains('show')) {
+        headerTitle.style.opacity = '1'; // Muestra el header-title al abrir
+    } else {
+        headerTitle.style.opacity = '0'; // Oculta el header-title al cerrar
+    }
+});
+
+// Ocultar los íconos de redes sociales cuando se hace clic fuera del menú
+document.addEventListener('click', (event) => {
+    if (!menuToggle.contains(event.target) && !navContainer.contains(event.target)) {
+        navContainer.classList.remove('show');
+        socialIcons.classList.remove('show');
+    }
 });
 
 coleccionesButton.addEventListener('click', (event) => {
