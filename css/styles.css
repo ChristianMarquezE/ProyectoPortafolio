@@ -10,7 +10,7 @@
 }
 
 body {
-font-family: 'Montserrat', serif;
+  font-family: 'Montserrat', serif;
   line-height: 1.6;
   color: var(--text-color);
   overflow-x: hidden;
@@ -189,6 +189,9 @@ font-family: 'Montserrat', serif;
   .header-title {
     font-size: 1.5rem;
   }
+  .social-icons2 {
+    display: none; /* Ocultar por defecto */
+  }
 }
 
 .montserrat-light {
@@ -197,6 +200,7 @@ font-family: 'Montserrat', serif;
   font-weight: 200;
   font-style: normal;
 }
+
 @media (max-width: 768px) {
   .mapa {
     padding-top: 12%;
@@ -215,7 +219,7 @@ font-family: 'Montserrat', serif;
   background: none; /* Sin fondo */
   padding: 0; /* Sin padding */
   margin-left: 20px; /* Mover el botón un poco más a la derecha */
-  margin-bottom: 10px
+  margin-bottom: 10px;
 }
 
 .menu-toggle .bar {
@@ -255,8 +259,6 @@ font-family: 'Montserrat', serif;
   .nav-container.show {
     display: flex; /* Mostrar el menú cuando se activa */
   }
-  
-  
 }
 /* FOOTER */
 
@@ -296,18 +298,17 @@ footer h2 {
   text-decoration: none; /* Sin subrayado */
 }
 .social-icons2 a {
-    color: var(--text-color); /* Color del ícono */
-    margin: 0px 10px; /* Espaciado entre íconos */
-    font-size: 1.5rem; /* Tamaño del ícono */
-    text-decoration: none; /* Sin subrayado */
-  }
+  color: var(--text-color); /* Color del ícono */
+  margin: 0px 10px; /* Espaciado entre íconos */
+  font-size: 1.5rem; /* Tamaño del ícono */
+  text-decoration: none; /* Sin subrayado */
+}
 .social-icons a:hover {
   opacity: 0.7; /* Efecto al pasar el mouse */
 }
 .social-icons2 a:hover {
-    opacity: 0.7; /* Efecto al pasar el mouse */
-  }
-
+  opacity: 0.7; /* Efecto al pasar el mouse */
+}
 
 footer p {
   margin: 10px 0 0; /* Margen para el texto del pie de página */
@@ -439,11 +440,6 @@ footer p {
   text-align: center; /* Centrar el texto del mapa */
 }
 
-.social-icons2 {
-    display: none; /* Ocultar por defecto */
-  }
-  
-  .social-icons2.show {
-    display: flex; /* Mostrar cuando se activa */
-  }
-  
+.social-icons2.show {
+  display: flex; /* Mostrar cuando se activa */
+}
