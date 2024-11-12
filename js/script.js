@@ -41,22 +41,18 @@ document.addEventListener('click', (event) => {
 coleccionesButton.addEventListener('click', (event) => {
     event.preventDefault(); // Evitar la redirección por defecto
 
-    // Verificar si estamos en index.html
-    if (window.location.pathname.endsWith('index.html')) {
+    const isIndexPage = window.location.href.includes('index.html');
+
+    if (isIndexPage) {
         if (coleccionesContent.style.display === 'block') {
-            // Si las colecciones están visibles, redirigir a colecciones.html
             window.location.href = 'pages/colecciones.html';
         } else {
-            // Si no están visibles, mostrarlas
             coleccionesContent.style.display = 'block';
         }
     } else {
-        // Si no estamos en index.html
         if (coleccionesContent.style.display === 'block') {
-            // Si las colecciones están visibles, redirigir a colecciones.html
             window.location.href = 'colecciones.html';
         } else {
-            // Si no están visibles, mostrarlas
             coleccionesContent.style.display = 'block';
         }
     }
