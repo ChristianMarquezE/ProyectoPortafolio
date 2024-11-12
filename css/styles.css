@@ -263,24 +263,35 @@ body {
   }
 
   .nav-container {
-    display: none; /* Ocultar el menú por defecto */
+    display: flex; /* Usar flexbox para alinear elementos */
     flex-direction: column; /* Alinear elementos verticalmente */
+    align-items: center; /* Centrar horizontalmente */
     position: absolute; /* Posicionarlo de forma absoluta */
     top: 100%; /* Colocarlo justo debajo del header */
     left: 0;
     width: 100%; /* Ancho completo */
     background-color: white; /* Fondo blanco */
     z-index: 2; /* Asegurarse de que esté sobre otros elementos */
+    display: none; /* Ocultar el menú por defecto */
   }
 
   .nav-links {
-    flex-direction: column; /* Alinear los enlaces en columna */
-    gap: 1rem; /* Espaciado entre enlaces */
+    display: flex; /* Usar flexbox para los enlaces */
+    flex-direction: column; /* Alinear enlaces en columna */
+    align-items: center; /* Centrar los enlaces horizontalmente */
+    width: 100%; /* Ancho completo */
+    padding: 1rem 0; /* Espaciado alrededor */
   }
 
   .nav-links a {
-    padding: 1rem; /* Espaciado alrededor de cada enlace */
-    text-align: center; /* Centrar el texto */
+    width: 100%; /* Ancho completo para los enlaces */
+    text-align: center; /* Centrar el texto de los enlaces */
+    padding: 1rem; /* Espaciado alrededor del texto */
+    color: var(--text-color); /* Color del texto */
+    text-decoration: none; /* Sin subrayado */
+  }
+  .nav-links a:hover {
+    background-color: rgba(0, 0, 0, 0.1); /* Color de fondo al pasar el mouse */
   }
 
   .nav-container.show {
