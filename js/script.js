@@ -12,7 +12,7 @@ document.querySelectorAll('.fade-in').forEach((el) => observador.observe(el));
 
 const menuToggle = document.querySelector('.menu-toggle'); 
 const navContainer = document.querySelector('.nav-container'); 
-const coleccionesButton = document.getElementById('colecciones-button');
+const coleccionesButton = document.querySelector('.colecciones-link');
 const coleccionesContent = document.querySelector('.colecciones-content');
 const socialIcons = document.querySelector('.social-icons2'); 
 const headerTitle = document.querySelector('.header-title'); // Agrega esta línea
