@@ -1,0 +1,720 @@
+/* Resetear estilos y variables */
+:root {
+  --text-color: #000000;
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+.titulo-centrado {
+  max-width: 60vw; /* Ajusta el ancho máximo según sea necesario */
+  margin: 0 auto; /* Centra el elemento */
+  text-align: center; /* Alinea el texto al centro */
+}
+.titulo-izquierda {
+  max-width: 60vw; /* Ajusta el ancho máximo según sea necesario */
+  margin: 0 auto; /* Centra el elemento */
+  text-align:left /* Alinea el texto al centro */
+  
+
+}
+.padding {
+  padding-top: 86px;
+}
+.padding2 {
+  padding-top: 15vh;
+
+}
+.padding-izquierda{
+  padding-left: 10vh;
+}
+.titulo-colecciones {
+  text-align: center;
+  justify-content: center;
+  padding-top: 17vh;
+}
+
+.padding-top {
+  padding-top: 15px;
+}
+
+.width-100 {
+  width: 100vw;
+  height: 100vh;
+}
+.paia-imagen {
+  width: 100vw;
+  height: 60vh;
+}
+.carousel-item img {
+  width: 100%;
+  height: 300px;
+  object-fit: cover;
+}
+
+.image1 {
+  position: absolute;
+  
+  transform: translateX(180%);
+
+}
+.image2 {
+  position: absolute;
+  bottom: 0;
+  right: 0;
+  width: 50%;
+  height: 50%;
+  object-fit: cover;
+}
+
+.image3 {
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  width: 50%;
+  height: 50%;
+  object-fit: cover;
+}
+
+
+.collage {
+  position: relative;
+  width: 500px; /* Puedes ajustar el tamaño */
+  height: 500px; /* Puedes ajustar el tamaño */
+}
+
+.foto-fondo {
+  width: 60%;
+  height: 60%;
+  object-fit: cover;
+}
+
+.foto-2 {
+  position: absolute;
+  top: 20px;  /* Ajusta según tus necesidades */
+  right: 20px; /* Ajusta según tus necesidades */
+  width: 60%; /* Ajusta el tamaño */
+  height: 60%; /* Ajusta el tamaño */
+  object-fit: cover;
+  transform: translateX(-4vh) translateY(20vh); /* Desplazamiento ajustable */
+}
+.padding-collage{
+
+  margin:5%;
+}
+.foto-3 {
+  position: absolute;
+  top: 20px;  /* Ajusta según tus necesidades */
+  left: 20px; /* Ajusta según tus necesidades */
+  width: 60%; /* Ajusta el tamaño */
+  height: 60%; /* Ajusta el tamaño */
+  object-fit: cover;
+  transform: translateX(-10vh) translateY(30vh); /* Desplazamiento ajustable */
+}
+.container1 {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 20px;
+  margin-bottom: 20px;
+  background-color: #fff;
+}
+
+.text {
+  flex: 1;
+  margin-right: 20px;
+}
+
+.text h2 {
+  margin-top: 0;
+}
+
+.text p {
+  line-height: 1.5;
+}
+
+.image {
+  width: 30%;
+}
+.padding-bottom {
+  padding-bottom: 30vh;
+}
+.padding-bottom1 {
+  padding-bottom: 10vh;
+}
+.tamano-letra {
+  font-size: 140%;
+  overflow-wrap: break-word;
+}
+.tamano-letra1 {
+  width: 200%;
+}
+.container2 {
+  display: flex;
+  gap: 30px;
+  padding-top: 20vh;
+}
+.negrita{
+  font-weight: bold;
+}
+
+
+.container2 .image-container2 img {
+  width: 100%;
+  height: auto;
+
+}
+
+.text-container {
+  text-align: center;
+  max-width: 600px;
+  padding-left:  20vw;
+}
+
+h2 {
+  margin-bottom: 10px;
+}
+
+p {
+  line-height: 1.5;
+}
+.image-container1 {
+  max-width: 60vw; /* Ajusta el ancho máximo según sea necesario */
+  margin: 0 auto; /* Centra el elemento */
+  text-align: center; /* Alinea el texto al centro */
+}
+.image-container2 {
+  width: 35%;
+  padding: 10px;
+}
+.image-container3 {
+  width: 50%;
+  padding: 10px;
+}
+.padding-general {
+  padding-top: 3vh;
+  justify-content: center;
+  text-align: center;
+}
+
+.container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 30%;
+ 
+}
+
+
+.container2 {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+ 
+}
+.container1 {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  height: 100vh;
+}
+
+.container3 {
+  display: flex;
+
+}
+
+img {
+  max-width: 100%; /* Para que la imagen no exceda el contenedor */
+  height: auto; /* Mantiene la proporción de la imagen */
+}
+.content {
+  text-align: center;
+  padding: 20px;
+  max-width: 50vw;
+  margin-right: 80px;
+}
+
+.image-container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  width: 100%;
+}
+
+img {
+  width: 100%;
+  height: auto;
+  margin-bottom: 20px;
+}
+
+.carousel img {
+  transform: none !important; /* Elimina cualquier transformación */
+  transition: none !important; /* Elimina la transición */
+  max-width: 100%; /* Asegura que las imágenes no excedan el ancho del contenedor */
+  height: auto; /* Mantiene la proporción de las imágenes */
+}
+body {
+  font-family: 'Montserrat', serif;
+  line-height: 1.6;
+  color: var(--text-color);
+  overflow-x: hidden;
+}
+
+/* Header y Navegación */
+.header-main {
+  display: flex; /* Usar flexbox para alinear elementos */
+  justify-content: space-between; /* Espacio entre el título, la navegación y los íconos */
+  align-items: center; /* Centrar verticalmente */
+  position: fixed;
+  width: 100%;
+  top: 0;
+  left: 0;
+  z-index: 3;
+  padding: 1.8rem 1rem 1rem 1.8rem;
+  transition: all 0.3s ease;
+  background-color: transparent;
+}
+
+/* Estilo para los íconos del header */
+.header-main .social-icons2 .instagram-icon {
+  color: var(
+    --text-color
+  ); /* Color negro (puedes definirlo en :root como #000000) */
+  text-decoration: none; /* Sin subrayado */
+  font-size: 1.8rem; /* Tamaño del ícono */
+}
+.header-main .social-icons2 a {
+  color: var(
+    --text-color
+  ); /* Color negro (puedes definirlo en :root como #000000) */
+  text-decoration: none; /* Sin subrayado */
+  font-size: 1rem; /* Tamaño del ícono */
+}
+.social-icons2 {
+  margin-bottom: 0.8rem;
+  margin-right: 3rem;
+}
+
+.contacto-link {
+  font-weight: normal;
+  font-size: 1;
+}
+.header-main .social-icons2 a:hover {
+  opacity: 0.7; /* Efecto al pasar el mouse */
+}
+.header-no-padding {
+  padding: 0; /* Padding para contacto.html */
+}
+
+.header-title {
+  display: flex;
+  justify-content: center; /* Centra horizontalmente */
+  align-items: center; /* Centra verticalmente, si es necesario */
+  position: absolute;
+  top: -30px;
+  left: 50%;
+  transform: translateX(-50%);
+  font-size: 1.5rem;
+  font-weight: bold;
+  opacity: 0;
+  transition: opacity 0.3s ease, top 0.3s ease;
+  padding-top: 2vh;
+}
+.header-title img {
+  max-width: 20%; /* Asegúrate de que la imagen no exceda el ancho del contenedor */
+  height: auto; /* Mantiene la proporción de la imagen */
+}
+
+.header-main:hover {
+  padding-top: 3rem;
+  background-color: white;
+  box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
+}
+
+.header-main:hover .header-title {
+  opacity: 1;
+  top: 10px;
+}
+
+.header-main:hover .nav-links a {
+  color: var(--text-color);
+}
+
+.header-main.header-hover {
+  padding-top: 3rem; /* Aplica el padding que se usa en hover */
+  background-color: white; /* Color de fondo */
+  box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1); /* Sombra */
+}
+
+.header-main.header-hover .header-title {
+  opacity: 1; /* Asegúrate de que el título sea visible */
+  top: 10px; /* Asegúrate de que esté en la posición correcta */
+}
+
+.nav-container {
+  position: relative;
+  display: flex;
+  justify-content: flex-start;
+  align-items: center;
+}
+
+.nav-links {
+  display: flex;
+  flex-direction: row;
+  gap: 2rem;
+  list-style: none;
+  margin-left: 1rem;
+}
+
+.nav-links a {
+  color: var(--text-color);
+  text-decoration: none;
+  font-weight: 500;
+  transition: opacity 0.3s ease;
+}
+.nav-links a.active {
+  text-decoration: underline; /* Subrayado para el enlace activo */
+}
+.nav-links a:hover {
+  opacity: 0.7;
+}
+
+/* Colecciones */
+
+.colecciones-content {
+  display: none; /* Ocultar por defecto */
+  flex-direction: column; /* Asegura que los elementos se alineen en columna */
+  margin-top: 0.5rem; /* Espaciado superior para separar del enlace principal */
+}
+
+.colecciones:hover .colecciones-content {
+  display: block; /* Mostrar al pasar el mouse */
+}
+
+/* Estilos para los enlaces dentro de colecciones */
+.colecciones-content a {
+  display: block; /* Cada enlace ocupa una línea completa */
+  padding: 0.1rem 0rem; /* Espaciado alrededor de cada enlace */
+  text-decoration: none; /* Sin subrayado */
+  color: var(--text-color); /* Color del texto */
+}
+
+.colecciones-content a:hover {
+  background-color: rgba(0, 0, 0, 0.1); /* Color de fondo al pasar el mouse */
+}
+/* Sección Hero */
+.hero {
+  height: 100vh;
+  width: 100%;
+  position: relative;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  overflow: hidden;
+}
+
+#bg-video {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  z-index: 1;
+}
+
+.hero-content {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  text-align: center;
+  z-index: 2;
+  width: 100%;
+}
+
+.hero-content img {
+  width: 27%;
+  height: 27%;
+}
+
+/* Media Queries */
+@media (max-width: 768px) {
+  .nav-links {
+    flex-direction: column;
+    align-items: center;
+    gap: 0.5rem;
+    padding-bottom: 10px;
+  }
+
+  .header-title {
+    font-size: 1.5rem;
+  }
+  .social-icons2 {
+    display: none; /* Ocultar por defecto */
+  }
+}
+
+.montserrat-light {
+  font-family: 'Montserrat', serif;
+  font-optical-sizing: auto;
+  font-weight: 200;
+  font-style: normal;
+}
+
+@media (max-width: 768px) {
+  .mapa {
+    padding-top: 12%;
+  }
+
+  .mapa iframe {
+    width: 100%;
+    height: 42%;
+  }
+}
+.menu-toggle {
+  display: none; /* Ocultar por defecto */
+  flex-direction: column; /* Para las tres rayas */
+  cursor: pointer; /* Cambiar el cursor al pasar por encima */
+  border: none; /* Sin borde */
+  background: none; /* Sin fondo */
+  padding: 0; /* Sin padding */
+  margin-left: 20px; /* Mover el botón un poco más a la derecha */
+  margin-bottom: 10px;
+}
+
+.menu-toggle .bar {
+  height: 3px; /* Altura de las rayas */
+  width: 25px; /* Ancho de las rayas */
+  background-color: var(--text-color); /* Color de las rayas */
+  margin: 3px 0; /* Espaciado entre las rayas */
+}
+
+/* Mostrar el botón hamburguesa solo en pantallas pequeñas */
+@media (max-width: 768px) {
+  .menu-toggle {
+    display: flex; /* Mostrar el botón en móviles */
+  }
+
+  .nav-container {
+    display: flex; /* Usar flexbox para alinear elementos */
+    flex-direction: column; /* Alinear elementos verticalmente */
+    align-items: center; /* Centrar horizontalmente */
+    position: absolute; /* Posicionarlo de forma absoluta */
+    top: 100%; /* Colocarlo justo debajo del header */
+    left: 0;
+    width: 100%; /* Ancho completo */
+    background-color: white; /* Fondo blanco */
+    z-index: 2; /* Asegurarse de que esté sobre otros elementos */
+    display: none; /* Ocultar el menú por defecto */
+  }
+
+  .nav-links {
+    display: flex; /* Usar flexbox para los enlaces */
+    flex-direction: column; /* Alinear enlaces en columna */
+    align-items: center; /* Centrar los enlaces horizontalmente */
+    width: 100%; /* Ancho completo */
+    padding: 1rem 0; /* Espaciado alrededor */
+  }
+
+  .nav-links a {
+    width: 100%; /* Ancho completo para los enlaces */
+    text-align: center; /* Centrar el texto de los enlaces */
+    padding: 1rem; /* Espaciado alrededor del texto */
+    color: var(--text-color); /* Color del texto */
+    text-decoration: none; /* Sin subrayado */
+  }
+  .nav-links a:hover {
+    background-color: rgba(0, 0, 0, 0.1); /* Color de fondo al pasar el mouse */
+  }
+
+  .nav-container.show {
+    display: flex; /* Mostrar el menú cuando se activa */
+  }
+}
+/* FOOTER */
+
+footer {
+  background-color: #333; /* Color de fondo del footer */
+  color: #fff; /* Color del texto */
+  text-align: center; /* Centrar el texto */
+  padding: 20px; /* Espaciado interno */
+  position: relative; /* Para poder usar propiedades de posicionamiento si es necesario */
+  bottom: 0; /* Asegura que el footer esté al final */
+  width: 100%; /* Asegura que el footer ocupe todo el ancho */
+  box-shadow: 0 -2px 5px rgba(0, 0, 0, 0.1); /* Sombra en la parte superior del footer */
+  margin-top: 0; /* Asegúrate de que no haya margen superior */
+}
+
+/* Estilo para los íconos del footer */
+footer .social-icons a {
+  color: #ffffff; /* Color blanco para los íconos del footer */
+  text-decoration: none; /* Sin subrayado */
+  font-size: 1.5rem; /* Tamaño del ícono */
+}
+
+footer .social-icons a:hover {
+  opacity: 0.7; /* Efecto al pasar el mouse */
+}
+
+footer h2 {
+  margin: 0; /* Eliminar márgenes del título */
+  font-size: 20px; /* Tamaño de fuente del título */
+  padding-bottom: 10px;
+}
+
+.social-icons a {
+  color: var(--text-color); /* Color del ícono */
+  margin: 0px 10px; /* Espaciado entre íconos */
+  font-size: 1.5rem; /* Tamaño del ícono */
+  text-decoration: none; /* Sin subrayado */
+}
+.social-icons2 a {
+  color: var(--text-color); /* Color del ícono */
+  margin: 0px 10px; /* Espaciado entre íconos */
+  font-size: 1.5rem; /* Tamaño del ícono */
+  text-decoration: none; /* Sin subrayado */
+}
+.social-icons a:hover {
+  opacity: 0.7; /* Efecto al pasar el mouse */
+}
+.social-icons2 a:hover {
+  opacity: 0.7; /* Efecto al pasar el mouse */
+}
+
+footer p {
+  margin: 10px 0 0; /* Margen para el texto del pie de página */
+  font-size: 14px; /* Tamaño de fuente del texto */
+}
+
+/* SECTION CONTACTO */
+/* Estilos generales para la sección de contacto */
+.contacto-title {
+  text-align: center; /* Centrar el título */
+  margin-top: 25px;
+  margin-bottom: 20px; /* Espacio inferior */
+}
+.contacto {
+  padding: 40px;
+  background-color: #f9f9f9; /* Color de fondo claro */
+  border-radius: 8px; /* Bordes redondeados */
+  margin-top: 50px; /* Margen superior e inferior */
+  display: flex;
+  flex-direction: column; /* Alinear elementos verticalmente */
+  align-items: center; /* Centrar elementos horizontalmente */
+}
+.contacto-info {
+  flex: 1; /* Permitir que este div ocupe el espacio disponible */
+  margin-right: 20px; /* Espacio entre el contenido y el mapa */
+}
+
+.contacto-content {
+  display: flex; /* Usar flexbox para alinear contenido */
+  justify-content: space-between; /* Espacio entre el contenido y el mapa */
+  width: 100%; /* Asegurar que ocupe todo el ancho */
+  max-width: 1200px; /* Opcional: Limitar el ancho máximo */
+  margin-bottom: 20px; /* Espacio inferior entre el contenido y el formulario */
+}
+.form-columns {
+  display: flex; /* Usar flexbox para columnas */
+  justify-content: space-between; /* Espacio entre columnas */
+  margin-bottom: 15px; /* Espacio inferior entre filas */
+}
+.form-group {
+  margin-bottom: 15px; /* Espacio entre los campos del formulario */
+}
+
+.form-group:last-child {
+  margin-right: 0; /* Eliminar margen derecho del último elemento */
+}
+
+.form-columns div {
+  flex: 1; /* Cada columna ocupa el mismo espacio */
+  margin-right: 20px; /* Espacio entre columnas */
+}
+
+.form-columns div:last-child {
+  margin-right: 0; /* Eliminar margen derecho del último elemento */
+}
+.contacto h2 {
+  font-size: 2em;
+  margin-bottom: 20px;
+}
+
+.contacto p {
+  font-size: 1.2em;
+  margin-bottom: 20px;
+  text-align: center;
+}
+
+.contact-form {
+  padding-top: 50px;
+  display: flex;
+  flex-direction: column; /* Alinear elementos verticalmente */
+  width: 100%; /* Asegurar que el formulario ocupe todo el ancho disponible */
+  max-width: 600px; /* Ancho máximo del formulario */
+  margin-bottom: 0; /* Asegúrate de que no haya margen inferior */
+}
+.contact-form label {
+  margin-bottom: 5px;
+  font-weight: bold;
+  margin-bottom: 5px; /* Espacio inferior para las etiquetas */
+}
+
+.contact-form input,
+.contact-form textarea {
+  padding: 10px;
+  border: 1px solid #ccc; /* Borde gris claro */
+  border-radius: 4px; /* Bordes redondeados */
+  font-size: 1em;
+  width: 100%; /* Asegurar que los campos ocupen todo el ancho */
+}
+
+.contact-form button {
+  display: flex;
+  text-align: center;
+  justify-content: center;
+  padding: 10px;
+  color: #d8c5a6; /* Color del texto del botón */
+  border: none;
+  border-radius: 4px; /* Bordes redondeados */
+  cursor: pointer; /* Cambiar cursor al pasar por encima */
+  font-size: 1em;
+  background: none;
+}
+
+.contact-form button p {
+  padding-right: 10px;
+}
+.contact-form button p:hover {
+  text-decoration: underline; /* Color más oscuro al pasar el mouse */
+}
+
+.contacto-info {
+  text-align: center;
+  margin-top: 20px; /* Espacio superior */
+}
+
+.contacto-info h3 {
+  font-size: 1.5em;
+  margin: 10px 0; /* Espacio superior e inferior */
+}
+
+.mapa {
+  flex: 1; /* Permitir que el mapa ocupe el espacio disponible */
+  text-align: center; /* Centrar el texto del mapa */
+}
+
+.mapa iframe {
+  border: 0; /* Sin borde */
+  border-radius: 8px; /* Bordes redondeados para el mapa */
+  flex: 1; /* Permitir que el mapa ocupe el espacio disponible */
+  text-align: center; /* Centrar el texto del mapa */
+}
+
+.social-icons2.show {
+  display: flex; /* Mostrar cuando se activa */
+}
