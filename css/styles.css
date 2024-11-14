@@ -8,8 +8,18 @@
   padding: 0;
   box-sizing: border-box;
 }
+.titulo-centrado {
+  max-width: 60vw; /* Ajusta el ancho máximo según sea necesario */
+  margin: 0 auto; /* Centra el elemento */
+  text-align: center; /* Alinea el texto al centro */
+}
 .padding {
   padding-top: 86px;
+}
+.titulo-colecciones {
+  text-align: center;
+  justify-content: center;
+  padding-top: 17vh;
 }
 
 .padding-top {
@@ -24,18 +34,145 @@
   height: 60vh;
 }
 
+.container1 {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 20px;
+  margin-bottom: 20px;
+  background-color: #fff;
+}
+
+.text {
+  flex: 1;
+  margin-right: 20px;
+}
+
+.text h2 {
+  margin-top: 0;
+}
+
+.text p {
+  line-height: 1.5;
+}
+
+.image {
+  width: 400px;
+}
 .padding-bottom {
   padding-bottom: 30vh;
 }
+.padding-bottom1 {
+  padding-bottom: 10vh;
+}
 .tamano-letra {
-  font-size: large;
+  font-size: 140%;
+  overflow-wrap: break-word;
+}
+.tamano-letra1 {
+  width: 200%;
+}
+.container2 {
+  display: flex;
+  gap: 30px;
+  padding-top: 20vh;
+}
+
+
+
+.container2 .image-container2 img {
+  width: 100%;
+  height: auto;
+  padding-left: 5vw;
+}
+
+.text-container {
+  text-align: center;
+  max-width: 600px;
+  padding-top: 25vh;
+  padding-left:  20vw;
+}
+
+h2 {
+  margin-bottom: 10px;
+}
+
+p {
+  line-height: 1.5;
+}
+.image-container1 {
+  max-width: 60vw; /* Ajusta el ancho máximo según sea necesario */
+  margin: 0 auto; /* Centra el elemento */
+  text-align: center; /* Alinea el texto al centro */
+}
+.image-container2 {
+  width: 35%;
+  padding: 10px;
+}
+.image-container3 {
+  width: 50%;
+  padding: 10px;
 }
 .padding-general {
-  padding: 15vh;
+  padding-top: 3vh;
   justify-content: center;
   text-align: center;
 }
 
+.container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+ 
+}
+.container2 {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+ 
+}
+.container1 {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  height: 100vh;
+}
+
+.container3 {
+  display: flex;
+
+}
+
+img {
+  max-width: 100%; /* Para que la imagen no exceda el contenedor */
+  height: auto; /* Mantiene la proporción de la imagen */
+}
+.content {
+  text-align: center;
+  padding: 20px;
+  max-width: 50vw;
+  margin-right: 80px;
+}
+
+.image-container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  width: 100%;
+}
+
+img {
+  width: 100%;
+  height: auto;
+  margin-bottom: 20px;
+}
+
+.carousel img {
+  transform: none !important; /* Elimina cualquier transformación */
+  transition: none !important; /* Elimina la transición */
+  max-width: 100%; /* Asegura que las imágenes no excedan el ancho del contenedor */
+  height: auto; /* Mantiene la proporción de las imágenes */
+}
 body {
   font-family: 'Montserrat', serif;
   line-height: 1.6;
@@ -53,20 +190,35 @@ body {
   top: 0;
   left: 0;
   z-index: 3;
-  padding: 1.8rem 1rem;
+  padding: 1.8rem 1rem 1rem 1.8rem;
   transition: all 0.3s ease;
   background-color: transparent;
 }
 
 /* Estilo para los íconos del header */
+.header-main .social-icons2 .instagram-icon {
+  color: var(
+    --text-color
+  ); /* Color negro (puedes definirlo en :root como #000000) */
+  text-decoration: none; /* Sin subrayado */
+  font-size: 1.8rem; /* Tamaño del ícono */
+}
 .header-main .social-icons2 a {
   color: var(
     --text-color
   ); /* Color negro (puedes definirlo en :root como #000000) */
   text-decoration: none; /* Sin subrayado */
-  font-size: 1.5rem; /* Tamaño del ícono */
+  font-size: 1rem; /* Tamaño del ícono */
+}
+.social-icons2 {
+  margin-bottom: 0.8rem;
+  margin-right: 3rem;
 }
 
+.contacto-link {
+  font-weight: normal;
+  font-size: 1;
+}
 .header-main .social-icons2 a:hover {
   opacity: 0.7; /* Efecto al pasar el mouse */
 }
@@ -86,6 +238,7 @@ body {
   font-weight: bold;
   opacity: 0;
   transition: opacity 0.3s ease, top 0.3s ease;
+  padding-top: 2vh;
 }
 .header-title img {
   max-width: 20%; /* Asegúrate de que la imagen no exceda el ancho del contenedor */
@@ -119,6 +272,7 @@ body {
 }
 
 .nav-container {
+  position: relative;
   display: flex;
   justify-content: flex-start;
   align-items: center;
