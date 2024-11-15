@@ -42,7 +42,7 @@ document.addEventListener('DOMContentLoaded', () => {
       } else {
         // Redirigir si el menú ya está abierto
         const currentUrl = window.location.href;
-        const mainPageUrl = 'https://josefinaorrego.cl'; // Cambia esto a la URL de tu página principal
+        const mainPageUrl = 'https://josefinaorrego.cl/'; // Cambia esto a la URL de tu página principal
         const mainPageUrl1 = 'http://josefinaorrego.cl/index.html';
         const mainPageUrl2 = 'http://josefinaorrego.cl/index.html#';
         
