@@ -42,13 +42,15 @@ document.addEventListener('DOMContentLoaded', () => {
       } else {
         // Redirigir si el menú ya está abierto
         const currentUrl = window.location.href;
-        const mainPageUrl = 'https://josefinaorrego.cl/'; // Cambia esto a la URL de tu página principal
+        const mainPageUrl = 'https://josefinaorrego.cl'; // Cambia esto a la URL de tu página principal
         const mainPageUrl1 = 'http://josefinaorrego.cl/index.html';
+        const mainPageUrl2 = 'http://josefinaorrego.cl/index.html#';
+        
         const redirectPageUrl =
           'http://josefinaorrego.cl/pages/colecciones.html'; // Cambia esto a la URL de la otra página
 
         // Redirigir según la página actual
-        if (currentUrl === mainPageUrl || currentUrl === mainPageUrl1) {
+        if (currentUrl === mainPageUrl || currentUrl === mainPageUrl1 || currentUrl === mainPageUrl2) {
           window.location.href = redirectPageUrl; // Redirigir a la otra página si estamos en la página principal
         } else {
           window.location.href = 'colecciones.html'; // Redirigir a la página de colecciones si estamos en otra página
