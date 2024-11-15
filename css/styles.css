@@ -130,12 +130,7 @@
 }
 
 .image {
-  width: 30%;
-
-}
-.carousel-item img {
-  transition: none; /* Elimina la transición */
-  transform: none; /* Elimina cualquier transformación */
+ width: 30%;
 }
 .padding-bottom {
   padding-bottom: 30vh;
@@ -281,7 +276,7 @@ body {
   font-size: 1rem; /* Tamaño del ícono */
 }
 .social-icons2 {
-  margin-bottom: 0.8rem;
+padding-bottom:  0.8rem;
   margin-right: 3rem;
 }
 
