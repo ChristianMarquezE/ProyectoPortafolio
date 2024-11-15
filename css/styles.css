@@ -277,8 +277,8 @@ body {
   font-size: 1rem; /* Tamaño del ícono */
 }
 .social-icons2 {
-padding-bottom:  0.8rem;
   margin-right: 3rem;
+ padding-bottom: 0.7rem;
 }
 
 .contacto-link {
@@ -433,6 +433,15 @@ padding-bottom:  0.8rem;
     padding-bottom: 10px;
     
   }
+  .contacto-link {
+    font-weight: normal;
+    font-size: 1;
+    padding-top: 0.8rem;
+  }
+  .social-icons2 {
+    padding-bottom: 0rem;
+    margin-right: 0rem;
+  }
   .container2 {
     display: flex;
     gap: 0px;
@@ -524,6 +533,7 @@ padding-bottom:  0.8rem;
     align-items: center; /* Centrar los enlaces horizontalmente */
     width: 100%; /* Ancho completo */
     padding: 1rem 0; /* Espaciado alrededor */
+    margin: 0;
   }
 
   .nav-links a {
