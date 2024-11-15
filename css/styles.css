@@ -131,6 +131,11 @@
 
 .image {
   width: 30%;
+
+}
+.carousel-item img {
+  transition: none; /* Elimina la transición */
+  transform: none; /* Elimina cualquier transformación */
 }
 .padding-bottom {
   padding-bottom: 30vh;
