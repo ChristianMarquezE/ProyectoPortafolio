@@ -687,6 +687,9 @@ body {
     padding-bottom: 10px;
     
   }
+  .padding-media{
+    margin-right: 5vw;
+  }
   .margin-top{
     margin-top: 5vh;
     padding-right: 5vh;
