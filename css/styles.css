@@ -8,30 +8,30 @@
   padding: 0;
   box-sizing: border-box;
 }
+.montserrat-light {
+  font-family: 'Montserrat', serif;
+  font-optical-sizing: auto;
+  font-weight: 200;
+  font-style: normal;
+}
 .titulo-centrado {
   max-width: 60vw; /* Ajusta el ancho máximo según sea necesario */
   margin: 0 auto; /* Centra el elemento */
   text-align: center; /* Alinea el texto al centro */
-  
 }
-.titulo-izquierda {
-  max-width: 100vw; /* Ajusta el ancho máximo según sea necesario */
-  margin: 0 auto; /* Centra el elemento */
-  text-align: left; /* Alinea el texto al centro */
-}
+
 .titulo-izquierda1 {
   max-width: 100vw; /* Ajusta el ancho máximo según sea necesario */
   margin: 0 auto; /* Centra el elemento */
   text-align: center; /* Alinea el texto al centro */
 }
 
-.space-beetween{
+.space-beetween {
   display: flex;
   justify-content: space-evenly;
   align-items: center;
 }
-.centrado{
-
+.centrado {
   justify-content: center;
 }
 .padding {
@@ -43,6 +43,11 @@
 .margin {
   margin-top: 10vh;
 }
+.margin2 {
+  margin-top: 10vh;
+}
+
+
 .margin-bottom {
   margin-bottom: 10vh;
 }
@@ -150,7 +155,7 @@
 }
 
 .image {
- width: 30%;
+  width: 30%;
 }
 .padding-bottom {
   padding-bottom: 30vh;
@@ -167,6 +172,10 @@
   width: 200%;
 }
 .container2 {
+  display: flex;
+  gap: 30px;
+}
+.container3 {
   display: flex;
   gap: 30px;
 }
@@ -187,7 +196,6 @@
 .text-container1 {
   text-align: center;
   max-width: 500vw;
-
 }
 
 h2 {
@@ -230,7 +238,7 @@ p {
 }
 .container1 {
   display: flex;
-  justify-content: space-between;
+  justify-content: space-evenly;
   align-items: center;
   height: 100vh;
 }
@@ -302,7 +310,7 @@ body {
 }
 .social-icons2 {
   margin-right: 3rem;
- padding-bottom: 0.7rem;
+  padding-bottom: 0.7rem;
 }
 
 .contacto-link {
@@ -447,140 +455,6 @@ body {
   width: 27%;
   height: 27%;
 }
-
-/* Media Queries */
-@media (max-width: 768px) {
-  .nav-links {
-    flex-direction: column;
-    align-items: center;
-    gap: 0.5rem;
-    padding-bottom: 10px;
-    
-  }
-  .contacto-link {
-    font-weight: normal;
-    font-size: 1;
-    padding-top: 0.8rem;
-  }
-  .social-icons2 {
-    padding-bottom: 0rem;
-    margin-right: 0rem;
-  }
-  .container2 {
-    display: flex;
-    gap: 0px;
-    padding-top: 20vh;
-  }
-  .padding-izquierda {
-    padding-left: 0vh;
-  }
-  .text {
-    flex: 1;
-    margin-right: 0px;
-  }
-  .header-title {
-    font-size: 1.5rem;
-  }
-  .social-icons2 {
-    display: none; /* Ocultar por defecto */
-  }
-  .text-container {
-    text-align: center;
-    width: 200%;
-    padding-left: 00vw;
-  }
-  .text-container1 {
-  
-    width: 300%;
- 
-    
-  }
-  .image-container2 {
-    width: 200%; 
-  }
-}
-
-.montserrat-light {
-  font-family: 'Montserrat', serif;
-  font-optical-sizing: auto;
-  font-weight: 200;
-  font-style: normal;
-}
-
-@media (max-width: 768px) {
-  .mapa {
-    padding-top: 12%;
-  }
-
-  .mapa iframe {
-    width: 100%;
-    height: 42%;
-  }
-  .tamano-letra{
-    font-size: small;
-  }
-}
-.menu-toggle {
-  display: none; /* Ocultar por defecto */
-  flex-direction: column; /* Para las tres rayas */
-  cursor: pointer; /* Cambiar el cursor al pasar por encima */
-  border: none; /* Sin borde */
-  background: none; /* Sin fondo */
-  padding: 0; /* Sin padding */
-  margin-left: 20px; /* Mover el botón un poco más a la derecha */
-  margin-bottom: 10px;
-}
-
-.menu-toggle .bar {
-  height: 3px; /* Altura de las rayas */
-  width: 25px; /* Ancho de las rayas */
-  background-color: var(--text-color); /* Color de las rayas */
-  margin: 3px 0; /* Espaciado entre las rayas */
-}
-
-/* Mostrar el botón hamburguesa solo en pantallas pequeñas */
-@media (max-width: 768px) {
-  .menu-toggle {
-    display: flex; /* Mostrar el botón en móviles */
-  }
-
-  .nav-container {
-    display: flex; /* Usar flexbox para alinear elementos */
-    flex-direction: column; /* Alinear elementos verticalmente */
-    align-items: center; /* Centrar horizontalmente */
-    position: absolute; /* Posicionarlo de forma absoluta */
-    top: 100%; /* Colocarlo justo debajo del header */
-    left: 0;
-    width: 100%; /* Ancho completo */
-    background-color: white; /* Fondo blanco */
-    z-index: 2; /* Asegurarse de que esté sobre otros elementos */
-    display: none; /* Ocultar el menú por defecto */
-  }
-
-  .nav-links {
-    display: flex; /* Usar flexbox para los enlaces */
-    flex-direction: column; /* Alinear enlaces en columna */
-    align-items: center; /* Centrar los enlaces horizontalmente */
-    width: 100%; /* Ancho completo */
-    padding: 1rem 0; /* Espaciado alrededor */
-    margin: 0;
-  }
-
-  .nav-links a {
-    width: 100%; /* Ancho completo para los enlaces */
-    text-align: center; /* Centrar el texto de los enlaces */
-    padding: 1rem; /* Espaciado alrededor del texto */
-    color: var(--text-color); /* Color del texto */
-    text-decoration: none; /* Sin subrayado */
-  }
-  .nav-links a:hover {
-    background-color: rgba(0, 0, 0, 0.1); /* Color de fondo al pasar el mouse */
-  }
-
-  .nav-container.show {
-    display: flex; /* Mostrar el menú cuando se activa */
-  }
-}
 /* FOOTER */
 
 footer {
@@ -653,13 +527,12 @@ footer p {
   align-items: center; /* Centrar elementos horizontalmente */
 }
 .contacto-info {
-  flex: 1; /* Permitir que este div ocupe el espacio disponible */
-  margin-right: 20px; /* Espacio entre el contenido y el mapa */
+text-align: center;
 }
 
 .contacto-content {
   display: flex; /* Usar flexbox para alinear contenido */
-  justify-content: space-between; /* Espacio entre el contenido y el mapa */
+  justify-content: center; /* Espacio entre el contenido y el mapa */
   width: 100%; /* Asegurar que ocupe todo el ancho */
   max-width: 1200px; /* Opcional: Limitar el ancho máximo */
   margin-bottom: 20px; /* Espacio inferior entre el contenido y el formulario */
@@ -731,8 +604,8 @@ footer p {
   font-size: 1em;
   background: none;
 }
-.padding-right{
-  padding-right: 10vh;
+.padding-right {
+  padding-right: 10vw;
 }
 .contact-form button p {
   padding-right: 10px;
@@ -740,10 +613,32 @@ footer p {
 .contact-form button p:hover {
   text-decoration: underline; /* Color más oscuro al pasar el mouse */
 }
+body {
+  font-family: Arial, sans-serif;
+}
 
+.navigation {
+  margin: 20px;
+  text-align: center;
+  color: #d8c5a6;
+}
+
+.nav-link1 {
+  text-decoration: none; /* Sin subrayado por defecto */
+  color: #d8c5a6; /* Color del enlace */
+  margin: 0 10px; /* Espacio entre enlaces */
+}
+
+.nav-link1:hover {
+  text-decoration: underline; /* Subrayado al pasar el mouse */
+  color: #d8c5a6; /* Color del enlace al pasar el mouse */
+}
 .contacto-info {
   text-align: center;
   margin-top: 20px; /* Espacio superior */
+}
+.margin-top{
+  margin-top: 30vh;
 }
 
 .contacto-info h3 {
@@ -765,4 +660,167 @@ footer p {
 
 .social-icons2.show {
   display: flex; /* Mostrar cuando se activa */
+}
+.menu-toggle {
+  display: none; /* Ocultar por defecto */
+  flex-direction: column; /* Para las tres rayas */
+  cursor: pointer; /* Cambiar el cursor al pasar por encima */
+  border: none; /* Sin borde */
+  background: none; /* Sin fondo */
+  padding: 0; /* Sin padding */
+  margin-left: 20px; /* Mover el botón un poco más a la derecha */
+  margin-bottom: 10px;
+}
+
+.menu-toggle .bar {
+  height: 3px; /* Altura de las rayas */
+  width: 25px; /* Ancho de las rayas */
+  background-color: var(--text-color); /* Color de las rayas */
+  margin: 3px 0; /* Espaciado entre las rayas */
+}
+/* Media Queries */
+@media (max-width: 768px) {
+  .nav-links {
+    flex-direction: column;
+    align-items: center;
+    gap: 0.5rem;
+    padding-bottom: 10px;
+    
+  }
+  .margin-top{
+    margin-top: 5vh;
+    padding-right: 5vh;
+  
+  }
+  .margin-texto{
+    margin-left: 30vw;
+  }
+  
+  .margin2 {
+    margin-top: 10vh;
+    margin-left: 10vw;
+    margin-right: 10vw;
+  }
+
+  .text-container1 {
+    text-align: center;
+    max-width: 500vw;
+    justify-content: center;
+  }
+  .content {
+    text-align: center;
+    padding: 20px;
+    max-width: 50vw;
+    margin-right: 0px;
+  }
+
+  .contacto-link {
+    font-weight: normal;
+    font-size: 1;
+    padding-top: 0.8rem;
+  }
+  .social-icons2 {
+    padding-bottom: 0rem;
+    margin-right: 0rem;
+  }
+  .container2 {
+    display: flex;
+    gap: 0px;
+    padding-top: 20vh;
+  }
+  .padding-izquierda {
+    padding-left: 0vh;
+  }
+  .text {
+    flex: 1;
+    margin-right: 0px;
+  }
+  .header-title {
+    font-size: 1.5rem;
+  }
+  .social-icons2 {
+    display: none; /* Ocultar por defecto */
+  }
+  .text-container {
+    text-align: center;
+    width: 200%;
+    padding-left: 00vw;
+  }
+  .text-container1 {
+    width: 300%;
+  }
+  .image-container2 {
+    width: 200%;
+  }
+  .padding-right {
+    padding-right: 0vw;
+  }
+  .image {
+    width: 30%;
+  }
+  .text-container1 {
+    text-align: center;
+    max-width: 45vw;
+  }
+}
+
+@media (max-width: 768px) {
+  .mapa {
+    padding-top: 12%;
+  }
+
+  div .container2 .padding-bottom {
+    padding: 0;
+  }
+  .mapa iframe {
+    width: 100%;
+    height: 42%;
+  }
+  .tamano-letra {
+    font-size: small;
+  }
+}
+
+/* Mostrar el botón hamburguesa solo en pantallas pequeñas */
+@media (max-width: 768px) {
+  .menu-toggle {
+    display: flex; /* Mostrar el botón en móviles */
+  }
+
+  .nav-container {
+    display: flex; /* Usar flexbox para alinear elementos */
+    flex-direction: column; /* Alinear elementos verticalmente */
+    align-items: center; /* Centrar horizontalmente */
+    position: absolute; /* Posicionarlo de forma absoluta */
+    top: 100%; /* Colocarlo justo debajo del header */
+    left: 0;
+    width: 100%; /* Ancho completo */
+    background-color: white; /* Fondo blanco */
+    z-index: 2; /* Asegurarse de que esté sobre otros elementos */
+    display: none; /* Ocultar el menú por defecto */
+  }
+
+  .nav-links {
+    display: flex; /* Usar flexbox para los enlaces */
+    flex-direction: column; /* Alinear enlaces en columna */
+    align-items: center; /* Centrar los enlaces horizontalmente */
+    width: 100%; /* Ancho completo */
+    padding: 1rem 0; /* Espaciado alrededor */
+    margin: 0;
+  }
+
+  .nav-links a {
+    width: 100%; /* Ancho completo para los enlaces */
+    text-align: center; /* Centrar el texto de los enlaces */
+    padding: 1rem; /* Espaciado alrededor del texto */
+    color: var(--text-color); /* Color del texto */
+    text-decoration: none; /* Sin subrayado */
+  }
+  .nav-links a:hover {
+    background-color: rgba(0, 0, 0, 0.1); /* Color de fondo al pasar el mouse */
+  }
+
+  .nav-container.show {
+    display: flex; /* Mostrar el menú cuando se activa */
+  }
 }
