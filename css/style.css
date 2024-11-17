@@ -687,6 +687,10 @@ body {
     padding-bottom: 10px;
     
   }
+  .paia-imagen {
+    width: 100vw;
+    height: 40vh;
+  }
   .padding-media{
     margin-right: 5vw;
   }
