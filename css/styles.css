@@ -155,7 +155,7 @@
 }
 
 .image {
-  width: 100%;
+  width: 35%;
 }
 .padding-bottom {
   padding-bottom: 30vh;
@@ -167,6 +167,14 @@
 .tamano-letra {
   font-size: 140%;
   overflow-wrap: break-word;
+
+
+}
+
+.tamano-letra2{
+  font-size: 100%;
+  overflow-wrap: break-word;
+
 }
 .tamano-letra1 {
   width: 200%;
@@ -195,12 +203,30 @@
 }
 .text-container1 {
   text-align: center;
-  max-width: 500vw;
+  max-width: 20vw;
 }
 
-h2 {
-  margin-bottom: 10px;
+.text-container2 {
+  text-align: center;
+  max-width: 20vw;
 }
+.text-container3 {
+  text-align: center;
+  max-width: 500vw;
+}
+.text-container4 {
+  text-align: center;
+  max-width: 40vw;
+  margin-left: 5vw;
+}
+
+.text-container5 {
+  text-align: center;
+  max-width: 25vw;
+  margin-left: 0vw;
+}
+
+
 
 p {
   line-height: 1.5;
@@ -223,7 +249,12 @@ p {
   justify-content: center;
   text-align: center;
 }
+.margin-desfile{
+   
+  margin-right: 30vw;
 
+  
+}
 .container {
   display: flex;
   justify-content: center;
@@ -253,7 +284,7 @@ img {
 }
 .content {
   text-align: center;
-  padding: 20px;
+  padding: 0px;
   max-width: 50vw;
   margin-right: 80px;
 }
@@ -270,7 +301,6 @@ img {
 img {
   width: 100%;
   height: auto;
-  margin-bottom: 20px;
 }
 
 body {
@@ -481,6 +511,10 @@ footer .social-icons a {
 footer .social-icons a:hover {
   opacity: 0.7; /* Efecto al pasar el mouse */
 }
+.text-decoration {
+ color: white;
+}
+
 
 footer h2 {
   margin: 0; /* Eliminar márgenes del título */
@@ -516,14 +550,13 @@ footer p {
 /* Estilos generales para la sección de contacto */
 .contacto-title {
   text-align: center; /* Centrar el título */
-  margin-top: 25px;
-  margin-bottom: 20px; /* Espacio inferior */
+/* Espacio inferior */
 }
 .contacto {
   padding: 40px;
   background-color: #f9f9f9; /* Color de fondo claro */
   border-radius: 8px; /* Bordes redondeados */
-  margin-top: 50px; /* Margen superior e inferior */
+  margin-top: 10vh; /* Margen superior e inferior */
   display: flex;
   flex-direction: column; /* Alinear elementos verticalmente */
   align-items: center; /* Centrar elementos horizontalmente */
@@ -537,7 +570,7 @@ text-align: center;
   justify-content: center; /* Espacio entre el contenido y el mapa */
   width: 100%; /* Asegurar que ocupe todo el ancho */
   max-width: 1200px; /* Opcional: Limitar el ancho máximo */
-  margin-bottom: 20px; /* Espacio inferior entre el contenido y el formulario */
+  margin-bottom: 10vh; /* Espacio inferior entre el contenido y el formulario */
 }
 .form-columns {
   display: flex; /* Usar flexbox para columnas */
@@ -562,7 +595,7 @@ text-align: center;
 }
 .contacto h2 {
   font-size: 2em;
-  margin-bottom: 20px;
+ 
 }
 
 .contacto p {
@@ -572,7 +605,7 @@ text-align: center;
 }
 
 .contact-form {
-  padding-top: 50px;
+
   display: flex;
   flex-direction: column; /* Alinear elementos verticalmente */
   width: 100%; /* Asegurar que el formulario ocupe todo el ancho disponible */
@@ -637,7 +670,7 @@ body {
 }
 .contacto-info {
   text-align: center;
-  margin-top: 20px; /* Espacio superior */
+  margin-top: 10vh; /* Espacio superior */
 }
 .margin-top{
   margin-top: 30vh;
