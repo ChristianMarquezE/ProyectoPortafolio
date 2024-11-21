@@ -156,7 +156,10 @@
 
 .image {
   width: 35%;
-  height: ;
+
+}
+.padding-bottom2{
+  padding-bottom: 2vh;
 }
 .padding-bottom {
   padding-bottom: 30vh;
