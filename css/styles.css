@@ -156,6 +156,7 @@
 
 .image {
   width: 35%;
+  height: ;
 }
 .padding-bottom {
   padding-bottom: 30vh;
@@ -166,6 +167,12 @@
 }
 .tamano-letra {
   font-size: 140%;
+  overflow-wrap: break-word;
+
+
+}
+.tamano-letra3 {
+  font-size: 100%;
   overflow-wrap: break-word;
 
 
