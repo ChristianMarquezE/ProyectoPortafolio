@@ -263,7 +263,7 @@ p {
 }
 .margin-desfile{
    
-  margin-right: 30vw;
+  margin-left: 30vw;
 
   
 }
@@ -938,7 +938,7 @@ body {
   }
   .margin-desfile{
    
-    margin-right: 0vw;
+    margin-left: 0vw;
   
     
   }

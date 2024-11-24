@@ -4,6 +4,7 @@ const socialIcons = document.querySelector('.social-icons2');
 const headerTitle = document.querySelector('.header-title'); // Agrega esta línea
 const coleccionesLink = document.querySelector('.colecciones-link');
 const menu = document.querySelector('.colecciones-content');
+const video = document.getElementById('bg-video');
 let isMenuOpen = false;
 
 document.addEventListener('DOMContentLoaded', () => {
@@ -105,3 +106,20 @@ const observador = new IntersectionObserver((entries) => {
 
 // Observar todos los elementos con la clase fade-in
 document.querySelectorAll('.fade-in').forEach((el) => observador.observe(el));
+
+
+
+// Función para ajustar el estado de mute del video
+function adjustVideoMute() {
+    if (window.innerWidth <= 768) { // Si el ancho de la ventana es menor o igual a 768px (móvil)
+        video.muted = true; // Silenciar el video
+    } else {
+        video.muted = false; // Activar el sonido del video
+    }
+}
+
+// Ajustar el mute al cargar la página
+adjustVideoMute();
+
+// Ajustar el mute al redimensionar la ventana
+window.addEventListener('resize', adjustVideoMute);
