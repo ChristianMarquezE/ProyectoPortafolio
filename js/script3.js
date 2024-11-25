@@ -132,17 +132,26 @@ window.addEventListener('resize', adjustVideoMute);
 
 
 
+
+
 // Asegúrate de que el video comience en silencio
 video.muted = true; // Silenciar el video por defecto
 
-// Función para ajustar el estado de mute del video
+// Función para ajustar el estado de mute y reproducción del video
 function adjustVideoMute(entry) {
     if (entry && entry.isIntersecting) { // Verifica que entry sea válido
-        video.muted = false; // Activar el sonido del video cuando está visible
-        video.play().catch(error => {
-            // Manejar el error si no se puede reproducir el video
-            console.error("Error al intentar reproducir el video:", error);
-        });
+        if (window.innerWidth > 768) { // Solo activar sonido en escritorio
+            video.muted = false; // Activar el sonido del video cuando está visible
+            video.play().catch(error => {
+                // Manejar el error si no se puede reproducir el video
+                console.error("Error al intentar reproducir el video:", error);
+            });
+        } else {
+            video.play().catch(error => {
+                // Manejar el error si no se puede reproducir el video
+                console.error("Error al intentar reproducir el video:", error);
+            });
+        }
     } else if (entry) {
         video.muted = true; // Silenciar el video cuando no está visible
         video.pause(); // Pausar el video
@@ -158,3 +167,8 @@ const observer = new IntersectionObserver((entries) => {
 
 // Observar el video
 observer.observe(video);
+
+// Ajustar el mute al redimensionar la ventana
+window.addEventListener('resize', () => {
+    video.muted = window.innerWidth <= 768; // Silenciar el video en móvil
+});
