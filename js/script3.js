@@ -152,7 +152,7 @@ function adjustVideoMute(entry) {
                 console.error("Error al intentar reproducir el video:", error);
             });
         }
-    } else if (entry) {
+    } else if (entry && window.innerWidth > 768) {
         video.muted = true; // Silenciar el video cuando no está visible
         video.pause(); // Pausar el video
     }
