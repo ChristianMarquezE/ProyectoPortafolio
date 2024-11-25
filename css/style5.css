@@ -227,13 +227,13 @@
   max-width: 500vw;
 }
 .text-container4 {
-  text-align: center;
+  text-align: left;
   max-width: 40vw;
   margin-left: 5vw;
 }
 
 .text-container5 {
-  text-align: center;
+  text-align: left;
   max-width: 25vw;
   margin-left: 0vw;
 }
@@ -295,7 +295,7 @@ img {
   height: auto; /* Mantiene la proporción de la imagen */
 }
 .content {
-  text-align: center;
+  text-align: left;
   padding: 20px;
   max-width: 50vw;
   margin-right: 80px;
@@ -782,7 +782,7 @@ body {
   }
 
   .text-container1 {
-    text-align: center;
+    text-align: left;
     max-width: 500vw;
     justify-content: center;
   }
@@ -910,13 +910,13 @@ body {
   }
 
   .text-container4 {
-    text-align: center;
+    text-align: left;
     max-width: 50vw;
     margin-left: 0vw;
   }
   
   .text-container5 {
-    text-align: center;
+    text-align: left;
     max-width: 50vw;
     margin-left: 0vw;
   }
