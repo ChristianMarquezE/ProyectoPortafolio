@@ -744,6 +744,7 @@ body {
 .padding-videos{
   margin-top: 105px;
 }
+
 /* Media Queries */
 @media (max-width: 768px) {
   .nav-links {
@@ -964,5 +965,12 @@ body {
   }
   .padding-videos{
     margin-top: 86px;
+  }
+  .portafolio{
+    font-size: 80%;
+  }
+  .hero-content img{
+    width: 60%;
+    height: 60%;
   }
 }
