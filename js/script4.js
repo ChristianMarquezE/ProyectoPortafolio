@@ -68,7 +68,7 @@ document.addEventListener('DOMContentLoaded', () => {
 
       // Redirigir a la página de colecciones
       const redirectPageUrl =
-        'https://josefinaorrego.cl/pages/colecciones.html'; // Cambia esto a la URL de la otra página
+        'https://josefinaorrego.vercel.app/pages/colecciones.html'; // Cambia esto a la URL de la otra página
       window.location.href = redirectPageUrl; // Redirigir a la página de colecciones
     }
   });
