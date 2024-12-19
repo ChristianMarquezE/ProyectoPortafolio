@@ -327,14 +327,15 @@ body {
   display: flex; /* Usar flexbox para alinear elementos */
   justify-content: space-between; /* Espacio entre el título, la navegación y los íconos */
   align-items: center; /* Centrar verticalmente */
-  position: fixed;
+  position: absolute;
   width: 100%;
   top: 0;
   left: 0;
   z-index: 3;
-  padding: 1.8rem 1rem 1rem 1.8rem;
+  padding: 1.2rem 2.8rem 1rem 2.8rem;
   transition: all 0.3s ease;
   background-color: transparent;
+  box-sizing: border-box;
 }
 
 /* Estilo para los íconos del header */
@@ -351,10 +352,6 @@ body {
   ); /* Color negro (puedes definirlo en :root como #000000) */
   text-decoration: none; /* Sin subrayado */
   font-size: 1rem; /* Tamaño del ícono */
-}
-.social-icons2 {
-  margin-right: 3rem;
-  padding-bottom: 0.7rem;
 }
 
 .contacto-link {
@@ -425,7 +422,8 @@ body {
   flex-direction: row;
   gap: 2rem;
   list-style: none;
-  margin-left: 1rem;
+  margin: 0;
+  padding: 0;
 }
 
 .nav-links a {
