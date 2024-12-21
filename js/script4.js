@@ -88,10 +88,10 @@ document.addEventListener('DOMContentLoaded', () => {
   // Opcional: ocultar las colecciones cuando se hace clic fuera de ellas
   document.addEventListener('click', (event) => {
     if (
-      !coleccionesButton.contains(event.target) &&
-      !coleccionesContent.contains(event.target)
+      !coleccionesLink.contains(event.target) &&
+      !coleccionesLink.contains(event.target)
     ) {
-      coleccionesContent.style.display = 'none';
+      menu.style.display = 'none';
     }
   });
 });
