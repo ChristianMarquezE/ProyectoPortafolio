@@ -43,13 +43,13 @@ document.addEventListener('DOMContentLoaded', () => {
       } else {
         // Redirigir si el menú ya está abierto
         const currentUrl = window.location.href;
-        const mainPageUrl = 'https://josefinaorrego.vercel.app/';// Cambia esto a la URL de tu página principal
-        const mainPageUrl3 = 'https://josefinaorrego.vercel.app/#';
-        const mainPageUrl1 = 'https://josefinaorrego.vercel.app/index.html';
-        const mainPageUrl2 = 'https://josefinaorrego.vercel.app/index.html#';
+        const mainPageUrl = 'https://josefinaorrego.cl/';// Cambia esto a la URL de tu página principal
+        const mainPageUrl3 = 'https://josefinaorrego.cl/#';
+        const mainPageUrl1 = 'https://josefinaorrego.cl/index.html';
+        const mainPageUrl2 = 'https://josefinaorrego.cl/index.html#';
         
         const redirectPageUrl =
-          'https://josefinaorrego.vercel.app/pages/colecciones.html'; // Cambia esto a la URL de la otra página
+          'https://josefinaorrego.cl/pages/colecciones.html'; // Cambia esto a la URL de la otra página
 
         // Redirigir según la página actual
         if (currentUrl === mainPageUrl || currentUrl === mainPageUrl1 || currentUrl === mainPageUrl2 || currentUrl === mainPageUrl3 ) {
@@ -68,7 +68,7 @@ document.addEventListener('DOMContentLoaded', () => {
 
       // Redirigir a la página de colecciones
       const redirectPageUrl =
-        'https://josefinaorrego.vercel.app/pages/colecciones.html'; // Cambia esto a la URL de la otra página
+        'https://josefinaorrego.cl/pages/colecciones.html'; // Cambia esto a la URL de la otra página
       window.location.href = redirectPageUrl; // Redirigir a la página de colecciones
     }
   });
