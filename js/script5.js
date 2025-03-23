@@ -43,16 +43,21 @@ document.addEventListener('DOMContentLoaded', () => {
       } else {
         // Redirigir si el menú ya está abierto
         const currentUrl = window.location.href;
-        const mainPageUrl = 'https://josefinaorrego.cl/';// Cambia esto a la URL de tu página principal
+        const mainPageUrl = 'https://josefinaorrego.cl/'; // Cambia esto a la URL de tu página principal
         const mainPageUrl3 = 'https://josefinaorrego.cl/#';
         const mainPageUrl1 = 'https://josefinaorrego.cl/index.html';
         const mainPageUrl2 = 'https://josefinaorrego.cl/index.html#';
-        
+
         const redirectPageUrl =
           'https://josefinaorrego.cl/pages/colecciones.html'; // Cambia esto a la URL de la otra página
 
         // Redirigir según la página actual
-        if (currentUrl === mainPageUrl || currentUrl === mainPageUrl1 || currentUrl === mainPageUrl2 || currentUrl === mainPageUrl3 ) {
+        if (
+          currentUrl === mainPageUrl ||
+          currentUrl === mainPageUrl1 ||
+          currentUrl === mainPageUrl2 ||
+          currentUrl === mainPageUrl3
+        ) {
           window.location.href = redirectPageUrl; // Redirigir a la otra página si estamos en la página principal
         } else {
           window.location.href = 'colecciones.html'; // Redirigir a la página de colecciones si estamos en otra página
@@ -108,15 +113,14 @@ const observador = new IntersectionObserver((entries) => {
 // Observar todos los elementos con la clase fade-in
 document.querySelectorAll('.fade-in').forEach((el) => observador.observe(el));
 
-
-
 // Función para ajustar el estado de mute del video
 function adjustVideoMute() {
-    if (window.innerWidth <= 768) { // Si el ancho de la ventana es menor o igual a 768px (móvil)
-        video.muted = true; // Silenciar el video
-    } else {
-        video.muted = false; // Activar el sonido del video
-    }
+  if (window.innerWidth <= 768) {
+    // Si el ancho de la ventana es menor o igual a 768px (móvil)
+    video.muted = true; // Silenciar el video
+  } else {
+    video.muted = false; // Activar el sonido del video
+  }
 }
 
 // Ajustar el mute al cargar la página
@@ -125,47 +129,37 @@ adjustVideoMute();
 // Ajustar el mute al redimensionar la ventana
 window.addEventListener('resize', adjustVideoMute);
 
-
-
-
-
-
-
-
-
-
-
 // Asegúrate de que el video comience en silencio
 video.muted = true; // Silenciar el video por defecto
 
 // Función para ajustar el estado de mute y reproducción del video
-function adjustVideoMute(entry) 
-
-{
-    if (entry && entry.isIntersecting && !video.mp4) { // Verifica que entry sea válido
-        if (window.innerWidth > 768 ) { // Solo activar sonido en escritorio
-            video.muted = false; // Activar el sonido del video cuando está visible
-            video.play().catch(error => {
-                // Manejar el error si no se puede reproducir el video
-                console.error("Error al intentar reproducir el video:", error);
-            });
-        } else {
-            video.play().catch(error => {
-                // Manejar el error si no se puede reproducir el video
-                console.error("Error al intentar reproducir el video:", error);
-            });
-        }
-    } else if (entry && window.innerWidth > 768) {
-        video.muted = true; // Silenciar el video cuando no está visible
-        video.pause(); // Pausar el video
+function adjustVideoMute(entry) {
+  if (entry && entry.isIntersecting) {
+    // Verifica que entry sea válido
+    if (window.innerWidth > 768) {
+      // Solo activar sonido en escritorio
+      video.muted = false; // Activar el sonido del video cuando está visible
+      video.play().catch((error) => {
+        // Manejar el error si no se puede reproducir el video
+        console.error('Error al intentar reproducir el video:', error);
+      });
+    } else {
+      video.play().catch((error) => {
+        // Manejar el error si no se puede reproducir el video
+        console.error('Error al intentar reproducir el video:', error);
+      });
     }
+  } else if (entry && window.innerWidth > 768) {
+    video.muted = true; // Silenciar el video cuando no está visible
+    video.pause(); // Pausar el video
+  }
 }
 
 // Crear el observador solo una vez
 const observer = new IntersectionObserver((entries) => {
-    entries.forEach((entry) => {
-        adjustVideoMute(entry);
-    });
+  entries.forEach((entry) => {
+    adjustVideoMute(entry);
+  });
 });
 
 // Observar el video
@@ -173,5 +167,5 @@ observer.observe(video);
 
 // Ajustar el mute al redimensionar la ventana
 window.addEventListener('resize', () => {
-    video.muted = window.innerWidth <= 768; // Silenciar el video en móvil
+  video.muted = window.innerWidth <= 768; // Silenciar el video en móvil
 });
